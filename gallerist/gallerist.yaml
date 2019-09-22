@@ -1,0 +1,13 @@
+# the name of the Azure Storage Blob container containing pictures
+container_name: example
+
+# nb: functions also require the following settings:
+# account_name:  <Azure Storage account name>
+# account_key:  <Azure Storage account key>
+
+# it is possible to configure these settings in YAML, and also in environmental variables with such names:
+# GALLERIST_ACCOUNT_NAME=name
+# GALLERIST_ACCOUNT_KEY=key
+#
+# environmental variables override the values from YAML files; 
+# see https://github.com/RobertoPrevato/roconfiguration for more information
