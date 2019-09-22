@@ -1,5 +1,7 @@
 azure-functions
+azure-functions-worker
 gallerist
 gallerist-azurestorage
 essentials
 roconfiguration
+
