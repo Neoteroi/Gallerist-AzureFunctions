@@ -1,9 +1,11 @@
 # Gallerist-AzureFunctions
 Azure Functions project to process images for the web, using Python 3, [Pillow](https://pillow.readthedocs.io), [Gallerist](https://github.com/RobertoPrevato/Gallerist); reading source pictures from an [Azure Storage Blob Service](https://github.com/RobertoPrevato/Gallerist-AzureStorage), writing resized pictures inside the same storage.
 
+Tested and proved to work with Python 3.6.8 and 3.7.0. Version 3.6.8 is currently the version recommended by Microsoft for Azure Functions 2 (as of today, the 22nd of September 2019).
+
 # How to run locally
 1. install [Azure Functions CLI](https://github.com/Azure/azure-functions-core-tools).
-1. create a Python virtual environment (this tool has been tested with 3.6.8, because this is currently the recommended version for Azure Functions 2)
+1. create a Python virtual environment
 1. install dependencies described in `requirements.txt`
 1. configure storage account name and key in YAML files, or environmental variables as described in `gallerist.yaml` comments; and also the blob container name (a container must exist already in the blob service)
 1. start the functions host from the `gallerist` folder:
